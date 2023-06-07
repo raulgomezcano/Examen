@@ -14,6 +14,6 @@ public class Main {
         producto2.setNombre("Fantas");producto2.setPrecio(5);
         Factura factura = new Factura();
         factura.anadirProducto(producto1); factura.anadirProducto(producto2);
-        System.out.println("El total de la factura es: " + factura.calcularTotalFactura());
+        System.out.println("El impuesto añadido de la factura es: " + factura.calcularTotalFactura());
     }
 }

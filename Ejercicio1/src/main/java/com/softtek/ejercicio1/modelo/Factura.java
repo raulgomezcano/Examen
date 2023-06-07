@@ -37,6 +37,6 @@ public class Factura {
         }
         System.out.println("--------------------------------");
         totalFactura = sumadorPrecioProductos * general.ivaGeneral;
-        return sumadorPrecioProductos;
+        return totalFactura;
     }
 }

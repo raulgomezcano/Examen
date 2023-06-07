@@ -12,6 +12,4 @@ export class AutobusesComponent {
     
   }
   autobus:Autobus=new Autobus;
-  autobus.matricula='1234ABC';
-  autobus.a_fabricacion=1999;
 }
