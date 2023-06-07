@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,5 +18,9 @@ public class Visita {
     private Date f_visita;
     @JoinColumn(name = "autobus")
     private Autobus autobus;
+    @JoinColumn(name = "conductor")
+    private Conductor conductor;
+    @JoinColumn(name = "lugar")
+    private Lugar lugar;
 
 }
