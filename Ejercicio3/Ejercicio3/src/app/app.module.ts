@@ -5,18 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AutobusesComponent } from './autobuses/autobuses.component';
 import { FormsModule } from '@angular/forms';
+import { VisitasComponent } from './visitas/visitas.component';
+import { AutobusesService } from './autobuses.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AutobusesComponent
+    AutobusesComponent,
+    VisitasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AutobusesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
